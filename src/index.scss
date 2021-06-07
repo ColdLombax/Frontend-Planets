@@ -1,0 +1,16 @@
+@import "./styles/Variables.scss";
+@import "./styles/Mixins.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-spartan;
+  font-weight: $weight-regular;
+}

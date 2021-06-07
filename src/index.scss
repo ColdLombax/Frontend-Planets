@@ -13,4 +13,19 @@ body {
   box-sizing: border-box;
   font-family: $font-spartan;
   font-weight: $weight-regular;
+
+  background-image: url("./assets/background-stars.svg");
+  background-position: center;
+  background-size: cover;
+  background-color: $clr-dark;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+  }
 }

@@ -1,5 +1,6 @@
 @import "./styles/Variables.scss";
 @import "./styles/Mixins.scss";
+@import "./styles/Navbar.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap");
 
@@ -18,6 +19,7 @@ body {
   background-position: center;
   background-size: cover;
   background-color: $clr-dark;
+  color: $clr-light;
 }
 
 @media screen and (min-width: 768px) {

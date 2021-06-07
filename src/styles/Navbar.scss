@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid $clr-darker-light;
+  height: 10vh;
+  padding: 0px 20px;
+
+  font-family: $font-antonio;
+  h1 {
+    margin-right: auto;
+  }
+  position: relative;
+}
+
+.planet-items {
+  display: none;
+}
+
+.nav-dropdown {
+  background-color: $clr-dark;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  height: 85vh;
+  width: 100%;
+  z-index: -1;
+  padding-top: 5vh;
+  ul {
+    padding-left: 0px;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+
+    font-family: $font-spartan;
+    font-weight: $weight-regular;
+    li {
+      display: flex;
+      padding: 0px 20px;
+      align-items: center;
+      border-bottom: 1px solid $clr-darker-light;
+      padding-bottom: 1em;
+      h3 {
+        margin-right: auto;
+      }
+      &:last-child {
+        border-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .planet-items {
+    display: block;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-bottom: none;
+    h1 {
+      margin: 0px;
+      padding: 1.5em;
+      margin-top: 2em;
+      font-size: 2.5em;
+    }
+    img {
+      display: none;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vw;
+      border-bottom: 2px solid $clr-darker-light;
+      padding: 0px;
+      p {
+        padding-bottom: 1.5em;
+        font-size: 1.5em;
+        color: $clr-darker-light;
+        font-weight: $weight-bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid $clr-darker-light;
+    h1 {
+      margin: 0px;
+      margin-right: auto;
+      width: auto;
+    }
+    ul {
+      width: 100%;
+      border: none;
+      margin-right: 10em;
+      align-items: center;
+      margin-top: 35px;
+      font-size: 1.2em;
+      p {
+        &:hover {
+          color: $clr-light;
+        }
+      }
+    }
+  }
+}

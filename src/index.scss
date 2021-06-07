@@ -12,22 +12,21 @@
 
 body {
   box-sizing: border-box;
+
   font-family: $font-spartan;
   font-weight: $weight-regular;
+  color: $clr-light;
+  font-size: 14px;
+  line-height: 25px;
 
   background-image: url("./assets/background-stars.svg");
   background-position: center;
   background-size: cover;
   background-color: $clr-dark;
-  color: $clr-light;
 }
 
 @media screen and (min-width: 768px) {
-  body {
-  }
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-  }
 }

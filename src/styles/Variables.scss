@@ -1,22 +1,20 @@
+:root {
+  // Inline Style Variables
+  --clr-mercury: #419ebb;
+  --clr-venus: #eda249;
+  --clr-earth: #6d2ed5;
+  --clr-mars: #d14c32;
+  --clr-jupiter: #d83a34;
+  --clr-saturn: #cd5120;
+  --clr-uranus: #1ec1a2;
+  --clr-neptune: #2d68f0;
+}
+
 // Greyscale Colors
 $clr-light: #ffffff;
 $clr-dark: #070724;
 $clr-lighter-dark: #38384f;
 $clr-darker-light: #838391;
-
-// Blueish Colors
-$clr-cyan: #419ebb;
-$clr-lightgreen: #1ec1a2;
-$clr-blue: #2d68f0;
-
-// Redish Colors
-$clr-light-red: #d14c32;
-$clr-dark-red: #d83a34;
-$clr-orange: #cd5120;
-$clr-grapefruit: #eda249;
-
-// Accent Colors
-$clr-purple: #6d2ed5;
 
 // Fonts Styles
 $font-antonio: "Antonio", sans-serif;
@@ -26,3 +24,13 @@ $font-spartan: "Spartan", sans-serif;
 $weight-bold: 700;
 $weight-regular: 400;
 $weight-medium: 500;
+
+// Planet Colors
+$clr-mercury: #419ebb;
+$clr-venus: #eda249;
+$clr-earth: #6d2ed5;
+$clr-mars: #d14c32;
+$clr-jupiter: #d83a34;
+$clr-saturn: #cd5120;
+$clr-uranus: #1ec1a2;
+$clr-neptune: #2d68f0;

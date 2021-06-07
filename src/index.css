@@ -1,9 +1,0 @@
-*,
-*::after,
-*::before {
-  margin: 0px;
-}
-
-body {
-  box-sizing: border-box;
-}

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Frontend-Planets/static/css/main.60b209cc.chunk.css",
+    "main.js": "/Frontend-Planets/static/js/main.e12813d7.chunk.js",
+    "main.js.map": "/Frontend-Planets/static/js/main.e12813d7.chunk.js.map",
+    "runtime-main.js": "/Frontend-Planets/static/js/runtime-main.453d500e.js",
+    "runtime-main.js.map": "/Frontend-Planets/static/js/runtime-main.453d500e.js.map",
+    "static/js/2.e3595341.chunk.js": "/Frontend-Planets/static/js/2.e3595341.chunk.js",
+    "static/js/2.e3595341.chunk.js.map": "/Frontend-Planets/static/js/2.e3595341.chunk.js.map",
+    "index.html": "/Frontend-Planets/index.html",
+    "static/css/main.60b209cc.chunk.css.map": "/Frontend-Planets/static/css/main.60b209cc.chunk.css.map",
+    "static/js/2.e3595341.chunk.js.LICENSE.txt": "/Frontend-Planets/static/js/2.e3595341.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/Frontend-Planets/static/media/planet-venus.db5a3444.svg",
+    "static/media/icon-chevron.8915cee9.svg": "/Frontend-Planets/static/media/icon-chevron.8915cee9.svg",
+    "static/media/icon-hamburger.05a40a49.svg": "/Frontend-Planets/static/media/icon-hamburger.05a40a49.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.453d500e.js",
+    "static/js/2.e3595341.chunk.js",
+    "static/css/main.60b209cc.chunk.css",
+    "static/js/main.e12813d7.chunk.js"
+  ]
+}

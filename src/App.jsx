@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DetailsNav from "./components/Navbar/DetailsNav";
 
 import Navbar from "./components/Navbar/Navbar";
+import Planet from "./components/Navbar/Planet";
 
 import data from "./data.json";
 
@@ -14,6 +15,7 @@ function App() {
       <section className='details-nav'>
         <DetailsNav name={currentPlanet} />
       </section>
+      <Planet currentPlanet={currentPlanet} data={data} />
     </div>
   );
 }

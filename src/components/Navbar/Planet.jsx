@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import PlanetFact from "./PlanetFact";
 
 function Planet({ currentPlanet, data, activeTab }) {
+  const [isCore, setIsCore] = useState(false);
   // Details
   const [overview, setOverview] = useState("");
   const [overviewSource, setOverviewSource] = useState("");
@@ -21,12 +22,15 @@ function Planet({ currentPlanet, data, activeTab }) {
         if (activeTab === "overview") {
           setOverview(data[i].overview.content);
           setOverviewSource(data[i].overview.source);
+          setIsCore(false);
         } else if (activeTab === "structure") {
           setOverview(data[i].structure.content);
           setOverviewSource(data[i].structure.source);
+          setIsCore(true);
         } else if (activeTab === "surface") {
           setOverview(data[i].geology.content);
           setOverviewSource(data[i].geology.source);
+          setIsCore(false);
         }
 
         // Fact Assignment
@@ -45,7 +49,9 @@ function Planet({ currentPlanet, data, activeTab }) {
 
   return (
     <div className='planet-container'>
-      <div className={`planet ${currentPlanet}-planet`}></div>
+      <div
+        className={`planet ${currentPlanet}-${isCore ? "core" : "planet"}`}
+      ></div>
       <div className='planet-details'>
         <h2>{currentPlanet.toUpperCase()}</h2>
         <p>{overview}</p>

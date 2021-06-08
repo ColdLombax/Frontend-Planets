@@ -1,16 +1,19 @@
-import PropTypes from "prop-types";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 import hamburger from "../../assets/icon-hamburger.svg";
 import NavItem from "./NavItem";
 
-function Navbar({ data }) {
-  const [isActive, setIsActive] = useState(true);
+function Navbar({ data, setPlanet }) {
+  const [isActive, setIsActive] = useState(false);
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
+
   const navItems = data.map((planet) => {
-    return <NavItem key={planet.name} name={planet.name} />;
+    return (
+      <NavItem key={planet.name} name={planet.name} setPlanet={setPlanet} />
+    );
   });
 
   return (
@@ -30,4 +33,5 @@ export default Navbar;
 
 Navbar.propTypes = {
   data: PropTypes.array,
+  setPlanet: PropTypes.func,
 };

@@ -1,11 +1,14 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 import chevron from "../../assets/icon-chevron.svg";
 
-function NavItem({ name }) {
+function NavItem({ name, setPlanet }) {
+  const clickHandler = () => {
+    setPlanet(name.toLowerCase());
+  };
+
   return (
-    <li className='nav-item'>
+    <li className='nav-item' onClick={clickHandler}>
       <div
         style={{
           width: "1.5em",
@@ -24,4 +27,5 @@ export default NavItem;
 
 NavItem.propTypes = {
   name: PropTypes.string,
+  setPlanet: PropTypes.func,
 };

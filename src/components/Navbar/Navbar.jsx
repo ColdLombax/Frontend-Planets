@@ -12,7 +12,12 @@ function Navbar({ data, setPlanet }) {
 
   const navItems = data.map((planet) => {
     return (
-      <NavItem key={planet.name} name={planet.name} setPlanet={setPlanet} />
+      <NavItem
+        key={planet.name}
+        name={planet.name}
+        setPlanet={setPlanet}
+        toggleMenu={toggleMenu}
+      />
     );
   });
 

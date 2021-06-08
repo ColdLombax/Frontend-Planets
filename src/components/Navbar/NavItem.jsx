@@ -2,8 +2,9 @@ import PropTypes from "prop-types";
 
 import chevron from "../../assets/icon-chevron.svg";
 
-function NavItem({ name, setPlanet }) {
+function NavItem({ name, setPlanet, toggleMenu }) {
   const clickHandler = () => {
+    toggleMenu();
     setPlanet(name.toLowerCase());
   };
 
@@ -28,4 +29,5 @@ export default NavItem;
 NavItem.propTypes = {
   name: PropTypes.string,
   setPlanet: PropTypes.func,
+  toggleMenu: PropTypes.func,
 };

@@ -85,3 +85,25 @@
     position: absolute;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .details {
+    margin-left: 5em;
+    width: 50%;
+    h2 {
+      margin-left: 26px;
+      text-align: left;
+    }
+    p {
+      text-align: left;
+    }
+  }
+
+  .geo-size {
+    width: 200px;
+    height: 200px;
+    top: 14.5%;
+    left: 45.7%;
+    position: absolute;
+  }
+}

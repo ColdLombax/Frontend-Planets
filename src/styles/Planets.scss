@@ -3,11 +3,27 @@
     background-color: $clr-mercury;
   }
 }
+.mercury-planet {
+  background: url("../assets/planet-mercury.svg") no-repeat center;
+  background-size: contain;
+}
+.mercury-core {
+  background: url("../assets/planet-mercury-internal.svg") no-repeat center;
+  background-size: contain;
+}
 
 .venus {
   &::after {
     background-color: $clr-venus;
   }
+}
+.venus-planet {
+  background: url("../assets/planet-venus.svg") no-repeat center;
+  background-size: contain;
+}
+.venus-core {
+  background: url("../assets/planet-venus-internal.svg") no-repeat center;
+  background-size: contain;
 }
 
 .earth {
@@ -15,11 +31,26 @@
     background-color: $clr-earth;
   }
 }
+.earth-planet {
+  background: url("../assets/planet-earth.svg") no-repeat center;
+  background-size: contain;
+}
+.earth-core {
+  background: url("../assets/planet-earth-internal.svg") no-repeat center;
+  background-size: contain;
+}
 
 .mars {
   &::after {
     background-color: $clr-mars;
   }
+}
+.mars-planet {
+  background: url("../assets/planet-mars.svg") no-repeat center;
+  background-size: contain;
+}
+.mars-core {
+  background: url("../assets/planet-mars-internal.svg") no-repeat center;
 }
 
 .jupiter {
@@ -27,11 +58,27 @@
     background-color: $clr-jupiter;
   }
 }
+.jupiter-planet {
+  background: url("../assets/planet-jupiter.svg") no-repeat center;
+  background-size: contain;
+}
+.jupiter-core {
+  background: url("../assets/planet-jupiter-internal.svg") no-repeat center;
+  background-size: contain;
+}
 
 .saturn {
   &::after {
     background-color: $clr-saturn;
   }
+}
+.saturn-planet {
+  background: url("../assets/planet-saturn.svg") no-repeat center;
+  background-size: contain;
+}
+.saturn-core {
+  background: url("../assets/planet-saturn-internal.svg") no-repeat center;
+  background-size: contain;
 }
 
 .uranus {
@@ -39,9 +86,25 @@
     background-color: $clr-uranus;
   }
 }
+.uranus-planet {
+  background: url("../assets/planet-uranus.svg") no-repeat center;
+  background-size: contain;
+}
+.uranus-core {
+  background: url("../assets/planet-uranus-internal.svg") no-repeat center;
+  background-size: contain;
+}
 
 .neptune {
   &::after {
     background-color: $clr-neptune;
   }
+}
+.neptune-planet {
+  background: url("../assets/planet-neptune.svg") no-repeat center;
+  background-size: contain;
+}
+.neptune-core {
+  background: url("../assets/planet-neptune-internal.svg") no-repeat center;
+  background-size: contain;
 }

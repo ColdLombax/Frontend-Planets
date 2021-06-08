@@ -194,3 +194,46 @@
     border-color: $clr-jupiter;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .nav-active.mercury {
+    &::before {
+      background-color: $clr-mercury;
+    }
+  }
+  .nav-active.venus {
+    &::before {
+      background-color: $clr-venus;
+    }
+  }
+  .nav-active.earth {
+    &::before {
+      background-color: $clr-earth;
+    }
+  }
+  .nav-active.mars {
+    &::before {
+      background-color: $clr-mars;
+    }
+  }
+  .nav-active.jupiter {
+    &::before {
+      background-color: $clr-jupiter;
+    }
+  }
+  .nav-active.saturn {
+    &::before {
+      background-color: $clr-saturn;
+    }
+  }
+  .nav-active.uranus {
+    &::before {
+      background-color: $clr-uranus;
+    }
+  }
+  .nav-active.neptune {
+    &::before {
+      background-color: $clr-neptune;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import NavItem from "./NavItem";
 
 function Navbar({ data, setPlanet }) {
   const [isActive, setIsActive] = useState(false);
+  const [navActive, setNavActive] = useState("");
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
@@ -25,11 +26,17 @@ function Navbar({ data, setPlanet }) {
     return (
       <li
         key={planet.name}
+        className={
+          navActive === planet.name
+            ? `${planet.name.toLowerCase()} nav-active`
+            : ""
+        }
         onClick={() => {
           setPlanet(planet.name.toLowerCase());
+          setNavActive(planet.name);
         }}
       >
-        {planet.name}
+        {planet.name.toUpperCase()}
       </li>
     );
   });

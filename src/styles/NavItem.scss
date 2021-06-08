@@ -1,0 +1,26 @@
+.nav-item {
+  @include flexbox(row, left, center);
+  font-size: 0.8em;
+  font-family: $font-spartan;
+  font-weight: $weight-regular;
+  border-bottom: 1px solid $clr-darker-light;
+
+  div {
+    margin-right: 1em;
+  }
+  h3 {
+    margin-right: auto;
+  }
+  img {
+    margin-right: 1.5em;
+  }
+
+  div,
+  h3,
+  img {
+    margin-bottom: 1.5em;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}

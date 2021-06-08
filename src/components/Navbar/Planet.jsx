@@ -56,8 +56,10 @@ function Planet({ currentPlanet, data, activeTab }) {
         ></div>
       </div>
       <div className='planet-details'>
-        <h2>{currentPlanet.toUpperCase()}</h2>
-        <p>{overview}</p>
+        <div className='details'>
+          <h2>{currentPlanet.toUpperCase()}</h2>
+          <p>{overview}</p>
+        </div>
         <p className='source-link'>
           Source:{" "}
           <a href={overviewSource} target='_blank' rel='noreferrer'>

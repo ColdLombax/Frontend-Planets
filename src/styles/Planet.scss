@@ -1,6 +1,5 @@
 .planet-container {
   @include flexbox(column, center, center);
-
   .planet {
     width: 80%;
     height: 400px;
@@ -32,6 +31,11 @@
   }
 }
 
+.details {
+  width: 100%;
+  text-align: center;
+}
+
 .planet-facts {
   @include flexbox(column, center, center);
   width: 100%;
@@ -43,4 +47,13 @@
   top: 34%;
   left: 28%;
   position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .planet-facts {
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

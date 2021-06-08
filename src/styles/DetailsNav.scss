@@ -55,6 +55,10 @@
         color: $clr-light;
         cursor: pointer;
         margin-bottom: 1em;
+        &:hover {
+          background-color: $clr-darker-light;
+          border-color: $clr-darker-light;
+        }
         &::before {
           content: "01";
           color: $clr-lighter-dark;

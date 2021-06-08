@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import PlanetFact from "./PlanetFact";
 
-function Planet({ currentPlanet, data }) {
+function Planet({ currentPlanet, data, activeTab }) {
   // Details
   const [overview, setOverview] = useState("");
   const [overviewSource, setOverviewSource] = useState("");
@@ -18,8 +18,16 @@ function Planet({ currentPlanet, data }) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].name.toLowerCase() === currentPlanet) {
         // Overview Assignment
-        setOverview(data[i].overview.content);
-        setOverviewSource(data[i].overview.source);
+        if (activeTab === "overview") {
+          setOverview(data[i].overview.content);
+          setOverviewSource(data[i].overview.source);
+        } else if (activeTab === "structure") {
+          setOverview(data[i].structure.content);
+          setOverviewSource(data[i].structure.source);
+        } else if (activeTab === "surface") {
+          setOverview(data[i].geology.content);
+          setOverviewSource(data[i].geology.source);
+        }
 
         // Fact Assignment
         setRotationTime(data[i].rotation);
@@ -32,7 +40,8 @@ function Planet({ currentPlanet, data }) {
 
   useEffect(() => {
     getDetails();
-  }, [currentPlanet]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPlanet, activeTab]);
 
   return (
     <div className='planet-container'>
@@ -62,4 +71,5 @@ export default Planet;
 Planet.propTypes = {
   currentPlanet: PropTypes.string,
   data: PropTypes.array,
+  activeTab: PropTypes.string,
 };

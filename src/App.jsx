@@ -8,14 +8,19 @@ import data from "./data.json";
 
 function App() {
   const [currentPlanet, setCurrentPlanet] = useState("mercury");
+  const [activeTab, setActiveTab] = useState("overview");
 
   return (
     <div className='App'>
       <Navbar data={data} setPlanet={setCurrentPlanet} />
       <section className='details-nav'>
-        <DetailsNav name={currentPlanet} />
+        <DetailsNav
+          name={currentPlanet}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        />
       </section>
-      <Planet currentPlanet={currentPlanet} data={data} />
+      <Planet currentPlanet={currentPlanet} data={data} activeTab={activeTab} />
     </div>
   );
 }

@@ -39,7 +39,7 @@ function Navbar({ data, setPlanet }) {
       <img src={hamburger} alt='menu toggle' onClick={toggleMenu} />
       {isActive && (
         <div className='dropdown'>
-          <ul className='nav-items'>{mobileNavItems}</ul>
+          <ul className='nav-items-mobile'>{mobileNavItems}</ul>
         </div>
       )}
       <div className='nav-items'>

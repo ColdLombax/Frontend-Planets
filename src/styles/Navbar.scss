@@ -30,12 +30,16 @@
   z-index: 5;
 }
 
-.nav-items {
+.nav-items-mobile {
   @include flexbox(column);
   list-style: none;
   margin-top: 5vh;
   padding: 0px 2em;
   gap: 1em;
+}
+
+.nav-items {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,6 +52,7 @@
       display: none;
     }
     .nav-items {
+      display: block;
       margin-top: 2.5vh;
       ul {
         @include flexbox(row, space-evenly, center);

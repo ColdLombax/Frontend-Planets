@@ -6,6 +6,8 @@
   padding: 0px 20px;
   height: 15vh;
 
+  border-bottom: 2px solid $clr-darker-light;
+
   position: relative;
   h1 {
     margin-right: auto;
@@ -16,7 +18,6 @@
 }
 
 .dropdown {
-  // Animate with motion div for nice effect?
   width: 100%;
   height: 85vh;
 
@@ -24,5 +25,14 @@
   top: 100%;
   left: 0px;
 
-  background-color: orange;
+  background-color: $clr-dark;
+  z-index: -1;
+}
+
+.nav-items {
+  @include flexbox(column);
+  list-style: none;
+  margin-top: 5vh;
+  padding: 0px 2em;
+  gap: 1em;
 }

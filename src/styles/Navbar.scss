@@ -3,10 +3,11 @@
 
   font-family: $font-antonio;
   font-size: 1.3em;
+
   padding: 0px 20px;
   height: 15vh;
 
-  border-bottom: 2px solid $clr-darker-light;
+  border-bottom: $bdr-2dl;
 
   position: relative;
   h1 {
@@ -26,7 +27,7 @@
   left: 0px;
 
   background-color: $clr-dark;
-  z-index: -1;
+  z-index: 5;
 }
 
 .nav-items {

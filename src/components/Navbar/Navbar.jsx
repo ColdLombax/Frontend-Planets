@@ -24,6 +24,7 @@ function Navbar({ data, setPlanet }) {
   const navItems = data.map((planet) => {
     return (
       <li
+        key={planet.name}
         onClick={() => {
           setPlanet(planet.name.toLowerCase());
         }}

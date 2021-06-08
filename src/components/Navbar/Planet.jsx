@@ -70,6 +70,7 @@ function Planet({ currentPlanet, data, activeTab, setActiveTab }) {
           </div>
           <div className='tablet-details'>
             <DetailsNav
+              key={data.name}
               name={currentPlanet}
               activeTab={activeTab}
               setActiveTab={setActiveTab}

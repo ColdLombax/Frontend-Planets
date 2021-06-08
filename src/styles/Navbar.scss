@@ -37,3 +37,34 @@
   padding: 0px 2em;
   gap: 1em;
 }
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    @include flexbox(column, center, center);
+    h1 {
+      margin: 0px;
+    }
+    img {
+      display: none;
+    }
+    .nav-items {
+      margin-top: 2.5vh;
+      ul {
+        @include flexbox(row, space-evenly, center);
+        list-style: none;
+        gap: 1.4em;
+        padding-left: 0px;
+        li {
+          color: $clr-darker-light;
+          font-size: 1em;
+          cursor: pointer;
+          font-family: $font-spartan;
+          font-weight: $weight-bold;
+          &:hover {
+            color: $clr-light;
+          }
+        }
+      }
+    }
+  }
+}

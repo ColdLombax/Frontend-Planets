@@ -10,7 +10,7 @@ function Navbar({ data, setPlanet }) {
     setIsActive(!isActive);
   };
 
-  const navItems = data.map((planet) => {
+  const mobileNavItems = data.map((planet) => {
     return (
       <NavItem
         key={planet.name}
@@ -21,15 +21,30 @@ function Navbar({ data, setPlanet }) {
     );
   });
 
+  const navItems = data.map((planet) => {
+    return (
+      <li
+        onClick={() => {
+          setPlanet(planet.name.toLowerCase());
+        }}
+      >
+        {planet.name}
+      </li>
+    );
+  });
+
   return (
     <nav className='navbar'>
       <h1>THE PLANETS</h1>
       <img src={hamburger} alt='menu toggle' onClick={toggleMenu} />
       {isActive && (
         <div className='dropdown'>
-          <ul className='nav-items'>{navItems}</ul>
+          <ul className='nav-items'>{mobileNavItems}</ul>
         </div>
       )}
+      <div className='nav-items'>
+        <ul>{navItems}</ul>
+      </div>
     </nav>
   );
 }

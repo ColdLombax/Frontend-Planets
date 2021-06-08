@@ -27,7 +27,7 @@ function NavItem({ name, setPlanet, toggleMenu }) {
 export default NavItem;
 
 NavItem.propTypes = {
-  name: PropTypes.string,
-  setPlanet: PropTypes.func,
+  name: PropTypes.string.isRequired,
+  setPlanet: PropTypes.func.isRequired,
   toggleMenu: PropTypes.func,
 };

@@ -36,3 +36,11 @@
   @include flexbox(column, center, center);
   width: 100%;
 }
+
+.geo-size {
+  width: 200px;
+  height: 200px;
+  top: 34%;
+  left: 28%;
+  position: absolute;
+}

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import PlanetFact from "./PlanetFact";
-
 function Planet({ currentPlanet, data, activeTab }) {
   const [isCore, setIsCore] = useState(false);
   // Details
@@ -49,9 +48,13 @@ function Planet({ currentPlanet, data, activeTab }) {
 
   return (
     <div className='planet-container'>
-      <div
-        className={`planet ${currentPlanet}-${isCore ? "core" : "planet"}`}
-      ></div>
+      <div className={`planet ${currentPlanet}-${isCore ? "core" : "planet"}`}>
+        <div
+          className={`geo-size ${
+            activeTab === "surface" ? `${currentPlanet}-geology` : ""
+          }`}
+        ></div>
+      </div>
       <div className='planet-details'>
         <h2>{currentPlanet.toUpperCase()}</h2>
         <p>{overview}</p>

@@ -1,3 +1,4 @@
+// MERCURY
 .mercury {
   &::after {
     background-color: $clr-mercury;
@@ -11,7 +12,12 @@
   background: url("../assets/planet-mercury-internal.svg") no-repeat center;
   background-size: contain;
 }
+.mercury-geology {
+  background: url("../assets/geology-mercury.png") no-repeat;
+  background-size: contain;
+}
 
+// VENUS
 .venus {
   &::after {
     background-color: $clr-venus;
@@ -25,7 +31,12 @@
   background: url("../assets/planet-venus-internal.svg") no-repeat center;
   background-size: contain;
 }
+.venus-geology {
+  background: url("../assets/geology-venus.png") no-repeat;
+  background-size: contain;
+}
 
+// EARTH
 .earth {
   &::after {
     background-color: $clr-earth;
@@ -39,7 +50,12 @@
   background: url("../assets/planet-earth-internal.svg") no-repeat center;
   background-size: contain;
 }
+.earth-geology {
+  background: url("../assets/geology-earth.png") no-repeat;
+  background-size: contain;
+}
 
+// MARS
 .mars {
   &::after {
     background-color: $clr-mars;
@@ -52,7 +68,12 @@
 .mars-core {
   background: url("../assets/planet-mars-internal.svg") no-repeat center;
 }
+.mars-geology {
+  background: url("../assets/geology-mars.png") no-repeat;
+  background-size: contain;
+}
 
+// JUPITER
 .jupiter {
   &::after {
     background-color: $clr-jupiter;
@@ -66,7 +87,12 @@
   background: url("../assets/planet-jupiter-internal.svg") no-repeat center;
   background-size: contain;
 }
+.jupiter-geology {
+  background: url("../assets/geology-jupiter.png") no-repeat;
+  background-size: contain;
+}
 
+// SATURN
 .saturn {
   &::after {
     background-color: $clr-saturn;
@@ -80,7 +106,12 @@
   background: url("../assets/planet-saturn-internal.svg") no-repeat center;
   background-size: contain;
 }
+.saturn-geology {
+  background: url("../assets/geology-saturn.png") no-repeat;
+  background-size: contain;
+}
 
+// URANUS
 .uranus {
   &::after {
     background-color: $clr-uranus;
@@ -94,7 +125,12 @@
   background: url("../assets/planet-uranus-internal.svg") no-repeat center;
   background-size: contain;
 }
+.uranus-geology {
+  background: url("../assets/geology-uranus.png") no-repeat;
+  background-size: contain;
+}
 
+// NEPTUNE
 .neptune {
   &::after {
     background-color: $clr-neptune;
@@ -106,5 +142,9 @@
 }
 .neptune-core {
   background: url("../assets/planet-neptune-internal.svg") no-repeat center;
+  background-size: contain;
+}
+.neptune-geology {
+  background: url("../assets/geology-neptune.png") no-repeat;
   background-size: contain;
 }

@@ -50,10 +50,30 @@
 }
 
 @media screen and (min-width: 768px) {
+  .details {
+    margin-left: 20px;
+    width: 50%;
+    h2 {
+      margin-left: 26px;
+      text-align: left;
+    }
+    p {
+      text-align: left;
+    }
+  }
+
   .planet-facts {
     width: 90%;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .planet {
+    margin: 3em 0em;
+  }
+
+  .tablet-flex {
+    @include flexbox(row, left, center);
   }
 }

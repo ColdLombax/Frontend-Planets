@@ -20,7 +20,12 @@ function App() {
           setActiveTab={setActiveTab}
         />
       </section>
-      <Planet currentPlanet={currentPlanet} data={data} activeTab={activeTab} />
+      <Planet
+        currentPlanet={currentPlanet}
+        data={data}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
     </div>
   );
 }

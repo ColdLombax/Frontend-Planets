@@ -1,20 +1,29 @@
 // MERCURY
+
 .mercury {
   &::after {
     background-color: $clr-mercury;
   }
 }
+
 .mercury-planet {
   background: url("../assets/planet-mercury.svg") no-repeat center;
   background-size: contain;
 }
+
 .mercury-core {
   background: url("../assets/planet-mercury-internal.svg") no-repeat center;
   background-size: contain;
 }
+
 .mercury-geology {
   background: url("../assets/geology-mercury.png") no-repeat;
   background-size: contain;
+}
+
+.active.mercury {
+  background-color: $clr-mercury;
+  border-color: $clr-mercury;
 }
 
 // VENUS
@@ -36,6 +45,11 @@
   background-size: contain;
 }
 
+.active.venus {
+  background-color: $clr-venus;
+  border-color: $clr-venus;
+}
+
 // EARTH
 .earth {
   &::after {
@@ -55,6 +69,11 @@
   background-size: contain;
 }
 
+.active.earth {
+  background-color: $clr-earth;
+  border-color: $clr-earth;
+}
+
 // MARS
 .mars {
   &::after {
@@ -71,6 +90,11 @@
 .mars-geology {
   background: url("../assets/geology-mars.png") no-repeat;
   background-size: contain;
+}
+
+.active.mars {
+  background-color: $clr-mars;
+  border-color: $clr-mars;
 }
 
 // JUPITER
@@ -92,6 +116,11 @@
   background-size: contain;
 }
 
+.active.jupiter {
+  background-color: $clr-jupiter;
+  border-color: $clr-jupiter;
+}
+
 // SATURN
 .saturn {
   &::after {
@@ -109,6 +138,11 @@
 .saturn-geology {
   background: url("../assets/geology-saturn.png") no-repeat;
   background-size: contain;
+}
+
+.active.saturn {
+  background-color: $clr-saturn;
+  border-color: $clr-saturn;
 }
 
 // URANUS
@@ -130,6 +164,11 @@
   background-size: contain;
 }
 
+.active.uranus {
+  background-color: $clr-uranus;
+  border-color: $clr-uranus;
+}
+
 // NEPTUNE
 .neptune {
   &::after {
@@ -147,4 +186,9 @@
 .neptune-geology {
   background: url("../assets/geology-neptune.png") no-repeat;
   background-size: contain;
+}
+
+.active.neptune {
+  background-color: $clr-neptune;
+  border-color: $clr-neptune;
 }

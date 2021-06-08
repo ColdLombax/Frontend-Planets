@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import PlanetFact from "./PlanetFact";
-function Planet({ currentPlanet, data, activeTab }) {
+import DetailsNav from "./DetailsNav";
+function Planet({ currentPlanet, data, activeTab, setActiveTab }) {
   const [isCore, setIsCore] = useState(false);
   // Details
   const [overview, setOverview] = useState("");
@@ -56,16 +57,25 @@ function Planet({ currentPlanet, data, activeTab }) {
         ></div>
       </div>
       <div className='planet-details'>
-        <div className='details'>
-          <h2>{currentPlanet.toUpperCase()}</h2>
-          <p>{overview}</p>
+        <div className='tablet-flex'>
+          <div className='details'>
+            <h2>{currentPlanet.toUpperCase()}</h2>
+            <p>{overview}</p>
+            <p className='source-link'>
+              Source:{" "}
+              <a href={overviewSource} target='_blank' rel='noreferrer'>
+                Wikipedia
+              </a>
+            </p>
+          </div>
+          <div className='tablet-details'>
+            <DetailsNav
+              name={currentPlanet}
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+            />
+          </div>
         </div>
-        <p className='source-link'>
-          Source:{" "}
-          <a href={overviewSource} target='_blank' rel='noreferrer'>
-            Wikipedia
-          </a>
-        </p>
         <div className='planet-facts'>
           <PlanetFact title='rotation time' fact={rotationTime} />
           <PlanetFact title='revolution time' fact={revolutionTime} />
@@ -83,4 +93,5 @@ Planet.propTypes = {
   currentPlanet: PropTypes.string,
   data: PropTypes.array,
   activeTab: PropTypes.string,
+  setActiveTab: PropTypes.func,
 };

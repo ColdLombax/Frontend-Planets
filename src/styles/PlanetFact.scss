@@ -1,0 +1,18 @@
+.fact {
+  @include flexbox(row, left, left);
+  width: 80%;
+  border: 2px solid $clr-lighter-dark;
+  padding: 1em;
+  margin-bottom: 1em;
+  p {
+    padding: 0px 10px;
+    text-align: left;
+    margin-right: auto;
+    color: $clr-darker-light;
+    &:last-child {
+      color: $clr-light;
+      margin-right: 0px;
+      font-weight: $weight-bold;
+    }
+  }
+}

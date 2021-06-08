@@ -76,4 +76,12 @@
   .tablet-flex {
     @include flexbox(row, left, center);
   }
+
+  .geo-size {
+    width: 200px;
+    height: 200px;
+    top: 19.2%;
+    left: 39.2%;
+    position: absolute;
+  }
 }

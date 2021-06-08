@@ -21,11 +21,6 @@
   background-size: contain;
 }
 
-.active.mercury {
-  background-color: $clr-mercury;
-  border-color: $clr-mercury;
-}
-
 // VENUS
 .venus {
   &::after {
@@ -43,11 +38,6 @@
 .venus-geology {
   background: url("../assets/geology-venus.png") no-repeat;
   background-size: contain;
-}
-
-.active.venus {
-  background-color: $clr-venus;
-  border-color: $clr-venus;
 }
 
 // EARTH
@@ -69,11 +59,6 @@
   background-size: contain;
 }
 
-.active.earth {
-  background-color: $clr-earth;
-  border-color: $clr-earth;
-}
-
 // MARS
 .mars {
   &::after {
@@ -90,11 +75,6 @@
 .mars-geology {
   background: url("../assets/geology-mars.png") no-repeat;
   background-size: contain;
-}
-
-.active.mars {
-  background-color: $clr-mars;
-  border-color: $clr-mars;
 }
 
 // JUPITER
@@ -116,11 +96,6 @@
   background-size: contain;
 }
 
-.active.jupiter {
-  background-color: $clr-jupiter;
-  border-color: $clr-jupiter;
-}
-
 // SATURN
 .saturn {
   &::after {
@@ -138,11 +113,6 @@
 .saturn-geology {
   background: url("../assets/geology-saturn.png") no-repeat;
   background-size: contain;
-}
-
-.active.saturn {
-  background-color: $clr-saturn;
-  border-color: $clr-saturn;
 }
 
 // URANUS
@@ -164,11 +134,6 @@
   background-size: contain;
 }
 
-.active.uranus {
-  background-color: $clr-uranus;
-  border-color: $clr-uranus;
-}
-
 // NEPTUNE
 .neptune {
   &::after {
@@ -188,7 +153,44 @@
   background-size: contain;
 }
 
-.active.neptune {
-  background-color: $clr-neptune;
-  border-color: $clr-neptune;
+@media screen and (min-width: 768px) {
+  .active.neptune {
+    background-color: $clr-neptune;
+    border-color: $clr-neptune;
+  }
+
+  .active.uranus {
+    background-color: $clr-uranus;
+    border-color: $clr-uranus;
+  }
+
+  .active.mercury {
+    background-color: $clr-mercury;
+    border-color: $clr-mercury;
+  }
+
+  .active.venus {
+    background-color: $clr-venus;
+    border-color: $clr-venus;
+  }
+
+  .active.earth {
+    background-color: $clr-earth;
+    border-color: $clr-earth;
+  }
+
+  .active.mars {
+    background-color: $clr-mars;
+    border-color: $clr-mars;
+  }
+
+  .active.saturn {
+    background-color: $clr-saturn;
+    border-color: $clr-saturn;
+  }
+
+  .active.jupiter {
+    background-color: $clr-jupiter;
+    border-color: $clr-jupiter;
+  }
 }

@@ -1,0 +1,25 @@
+.details-nav {
+  border-bottom: $bdr-2dl;
+  padding: 2em;
+  ul {
+    @include flexbox(row, space-evenly, center);
+    gap: 2em;
+    padding-left: 0px;
+    list-style: none;
+    font-weight: $weight-bold;
+  }
+  li {
+    cursor: pointer;
+    position: relative;
+    &:hover::after {
+      content: "";
+      display: block;
+
+      width: 100%;
+      height: 5px;
+
+      position: absolute;
+      top: 3em;
+    }
+  }
+}

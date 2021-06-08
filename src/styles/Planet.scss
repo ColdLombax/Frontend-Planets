@@ -1,0 +1,38 @@
+.planet-container {
+  @include flexbox(column, center, center);
+
+  .planet {
+    width: 80%;
+    height: 400px;
+  }
+
+  h2 {
+    font-family: $font-antonio;
+    font-weight: $weight-bold;
+    font-size: 4em;
+  }
+
+  p {
+    text-align: center;
+    padding: 2em;
+    line-height: 1.8em;
+  }
+}
+
+.planet-details {
+  @include flexbox(column, center, center);
+  width: 100%;
+  .source-link {
+    color: $clr-lighter-dark;
+    padding-top: 0px;
+    a {
+      font-weight: $weight-bold;
+      color: $clr-darker-light;
+    }
+  }
+}
+
+.planet-facts {
+  @include flexbox(column, center, center);
+  width: 100%;
+}

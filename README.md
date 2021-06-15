@@ -1,5 +1,5 @@
 # Planet Facts
-A responsive website containing awesome planet facts, including rotation times, structure and surface, extraced from a provided JSON file.
+A responsive website containing awesome planet facts, including rotation times, structure, surface and more! Extraced from a provided JSON file.
 
 I had created this website in a few hours as a challenge to myself, accomplish as much as possible within a time frame. I'm happy to say I not only accomplished a lot, but finished the project.
 

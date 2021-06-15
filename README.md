@@ -23,19 +23,19 @@ I had created this website in a few hours as a challenge to myself, accomplish a
 
 ## Tools Used
 <p align = "left">
-  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank"> 
+  <a href="https://reactjs.org/" target="blank"> 
     <img src="https://img.shields.io/badge/react-333?label=&style=for-the-badge&logo=react">
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank"> 
     <img src="https://img.shields.io/badge/html5-333?label=&style=for-the-badge&logo=html5">
   </a>
-   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank"> 
+   <a href="https://sass-lang.com/" target="blank"> 
     <img src="https://img.shields.io/badge/sass-333?label=&style=for-the-badge&logo=sass">
   </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank"> 
+  <a href="https://www.javascript.com/" target="blank"> 
     <img src="https://img.shields.io/badge/javascript-333?label=&style=for-the-badge&logo=javascript">
   </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank"> 
+  <a href="https://www.json.org/json-en.html" target="blank"> 
     <img src="https://img.shields.io/badge/json-333?label=&style=for-the-badge&logo=json">
   </a>
 </p>
